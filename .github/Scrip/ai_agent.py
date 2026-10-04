@@ -52,9 +52,9 @@ def main():
     Analyze which specific file needs modifications. Return the updated content of that file mapped precisely.
     """
 
-    print("Requesting code patches from gemini-2.5-pro...")
+        print("Requesting code patches from gemini-3.8-flash...")
     response = client.models.generate_content(
-        model='gemini-2.5-pro',
+        model='gemini-3.8-flash',  # 👈 Changed to the active 3.8 Flash model
         contents=prompt,
         config=config
     )
